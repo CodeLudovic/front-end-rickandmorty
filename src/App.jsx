@@ -50,7 +50,7 @@ function App() {
 	const login = async (userData) => {
 		try {
 			const { email, password } = userData;
-			const URL = "http://localhost:3001/rickandmorty/login/";
+			const URL = "https://back-end-rickandmorty-production.up.railway.app/rickandmorty/login";
 			const { data } = await axios(
 				URL + `?email=${email}&password=${password}`
 			);

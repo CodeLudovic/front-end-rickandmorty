@@ -1,0 +1,122 @@
+.search_bar { 
+    display: grid;
+    grid-template-columns: 60% 20% 20%;
+    align-items: center;
+    height: 60px;
+    background-color: #5c5a5a;
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 500px;
+    justify-content: flex-end;
+    border-radius: 14px;
+    margin-right: 12vw;
+    justify-items: center;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.8 ), -5px 0 5px -5px rgba(0, 0, 0, 0.8);
+ }
+ /* onSearch, SearchBar */
+ .input_nav {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    border: 0px;
+    margin-left: 10px ;
+    padding: 10px 15px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    box-sizing: border-box;
+    outline:none;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.8 ), -5px 0 5px -5px rgba(0, 0, 0, 0.8);  
+ }
+
+ .input_nav::before {
+  content: "🔍"; /* Aquí puedes agregar el icono que desees */
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 20px 
+}
+ .input_nav:focus{
+    transform: scale(1.05);
+    display: inline-block;
+    box-shadow: 
+    0 0 10px cyan,  
+    0 0 20px magenta;
+    cursor: pointer;
+ }
+ 
+ .button_search{
+    margin-right: 20px;
+    width: 108px;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    background: #ffff61;
+    /* font-family: 'get schwifty', sans-serif;
+    font-size: 14px; */
+    font-family: Arcade Gamer;
+    font-size: 17px;
+    transition: box-shadow 0.5s;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.8 ), -5px 0 5px -5px rgba(0, 0, 0, 0.8);
+ }
+ 
+ .button_search:hover{
+    transform: scale(1.05);
+    display: inline-block;
+    box-shadow: 
+    0 0 10px cyan,  
+    0 0 20px magenta;
+    cursor: pointer;
+ }
+
+ .button_random{
+    display: flex;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    border-radius: 10px;
+    background: #ffff61;
+    /* font-family: 'get schwifty', sans-serif;
+    font-size: 14px; */
+    font-family: Arcade Gamer;
+    font-size: 24px;
+    justify-content: center;
+    box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.8 ), -5px 0 5px -5px rgba(0, 0, 0, 0.8);
+ }
+ 
+ .button_random:hover{
+    transform: scale(1.05);
+    box-shadow: 
+    0 0 10px cyan,  
+    0 0 20px magenta;
+    cursor: pointer;
+    border: 1px #434343 solid;
+ }
+
+ @media (max-width: 720px) {
+   .search_bar{
+      width: 350px;
+   }
+   .button_search{
+      width: 70px;
+      font-size: 15px;
+   }
+   .input_nav {
+      width: 180px;
+      height: 30px;
+      border-radius: 4px;
+      border: 0px;
+      margin-left: 10px ;
+      padding: 10px 15px; 
+      border: 1px solid #ccc; 
+      font-size: 16px; 
+      box-sizing: border-box;
+      outline:none;
+      box-shadow: 5px 0 10px -5px rgba(0, 0, 0, 0.8 ), -5px 0 5px -5px rgba(0, 0, 0, 0.8);  
+   }
+
+   .input_nav::before {
+      content: "🔍"; /* Aquí puedes agregar el icono que desees */
+    }
+ }

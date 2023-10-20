@@ -1,0 +1,46 @@
+.container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/RickAndMortySpace.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.presentation{
+  width: 300px;
+  background-color: white;
+}
+
+.container {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 40px;
+  margin-top: 60px; 
+  z-index: 1;
+}
+
+@media (max-height: 900px) {
+  /* .container {
+    margin-top: 27vh;
+  }
+} */
+}
+@media (max-width: 1400px) {
+  .container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    margin-top: 60px;
+  }
+}

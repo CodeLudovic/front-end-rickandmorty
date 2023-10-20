@@ -1,0 +1,10 @@
+@font-face {
+   font-family: Arcade Gamer;
+   src: url(./assets/fonts/ArcadeGamer.otf);
+}
+
+.App {
+   display: grid;
+   text-align: center;
+}
+

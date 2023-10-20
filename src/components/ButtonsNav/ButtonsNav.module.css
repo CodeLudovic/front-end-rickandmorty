@@ -1,0 +1,234 @@
+.gridButtons{
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-items: center;
+   align-items: center;
+   width: 100%;
+   
+}
+
+.buttons___grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 40px;
+}
+
+.button_home{
+   width: 108px;
+   height: 40px;
+   border: 0px;
+   border-radius: 10px;
+   background: #ffff61;
+   /* font-family: 'get schwifty', sans-serif;
+   font-size: 14px; */
+   font-family: Arcade Gamer;
+   font-size: 17px;
+}
+
+/* .active {
+   background-color: brown;
+   font-weight: bold;
+   text-decoration: none;
+ }
+ .disable {
+   background-color: #f6f4e6;
+   text-decoration: none;
+ } */
+
+.button_home:hover{
+   transform: scale(1.05);
+   display: inline-block;
+   box-shadow: 
+   0 0 10px cyan,  
+   0 0 20px magenta;
+   border: 1px black solid;
+   cursor: pointer;
+}
+
+.button_about{
+   width: 108px;
+   height: 40px;
+   border: 0px;
+   border-radius: 10px;
+   background: #ffff61;
+   /* font-family: 'get schwifty', sans-serif;
+   font-size: 14px; */
+   font-family: Arcade Gamer;
+   font-size: 17px;
+}
+
+.button_about:hover{
+   transform: scale(1.05);
+   display: inline-block;
+   box-shadow: 
+   0 0 10px cyan,  
+   0 0 20px magenta;
+   cursor: pointer;
+   border: 1px #434343 solid;
+}
+
+.button_favorite{
+   /* margin-right: 20px; */
+   width: 108px;
+   height: 40px;
+   border: 0px;
+   border-radius: 10px;
+   background: #ffff61;
+   /* font-family: 'get schwifty', sans-serif;
+   font-size: 14px; */
+   font-family: Arcade Gamer;
+   font-size: 17px;
+}
+
+.button_favorite:hover{
+   transform: scale(1.05);
+   display: inline-block;
+   box-shadow: 
+   0 0 10px cyan,  
+   0 0 20px magenta;
+   cursor: pointer;
+   border: 1px #434343 solid;
+}
+
+.button_random{
+   margin-right: 20px;
+   width: 40px;
+   height: 40px;
+   border: 0px;
+   border-radius: 10px;
+   background: #ffff61;
+   /* font-family: 'get schwifty', sans-serif;
+   font-size: 14px; */
+   font-family: Arcade Gamer;
+   font-size: 24px;
+   justify-content: center;
+}
+
+.button_random:hover{
+   transform: scale(1.05);
+   box-shadow: 
+   0 0 10px cyan,  
+   0 0 20px magenta;
+   cursor: pointer;
+   border: 1px #434343 solid;
+}
+
+.button_logout{
+   width: 108px;
+   height: 40px;
+   border: 0px;
+   border-radius: 10px;
+   background: #e77272;
+   /* font-family: 'get schwifty', sans-serif;
+   font-size: 14px; */
+   font-family: Arcade Gamer;
+   font-size: 17px;
+}
+
+.button_logout:hover{
+   transform: scale(1.05);
+   box-shadow: 
+   0 0 10px cyan,  
+   0 0 20px magenta;
+   cursor: pointer;
+   border: 1px #434343 solid;
+}
+
+@media screen {
+   /* 1er Breakpoint 1380px */
+}
+
+@media (max-width: 1386px) {
+
+   .button_home{
+      margin-right: 10px;
+      width: 80px;
+      height: 40px;
+      border: 0px;
+      border-radius: 10px;
+      background: #ffff61;
+      /* font-family: 'get schwifty', sans-serif;
+      font-size: 14px; */
+      font-family: Arcade Gamer;
+      font-size: 17px;
+      opacity: 1;
+   }
+
+   /* .gridButtons{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+      opacity: 1 !important;
+      align-items: baseline;
+      
+   }
+    */
+
+   .button_about{
+      width: 80px;
+      height: 40px;
+      border: 0px;
+      border-radius: 10px;
+      background: #ffff61;
+      /* font-family: 'get schwifty', sans-serif;
+      font-size: 14px; */
+      font-family: Arcade Gamer;
+      font-size: 17px;
+   }
+   .button_favorite{
+      /* margin-right: 20px; */
+      width: 108px;
+      height: 40px;
+      border: 0px;
+      border-radius: 10px;
+      background: #ffff61;
+      /* font-family: 'get schwifty', sans-serif;
+      font-size: 14px; */
+      font-family: Arcade Gamer;
+      font-size: 17px;
+   }
+   .button_logout{
+      width: 108px;
+      height: 40px;
+      border: 0px;
+      border-radius: 10px;
+      background: #e77272;
+      /* font-family: 'get schwifty', sans-serif;
+      font-size: 14px; */
+      font-family: Arcade Gamer;
+      font-size: 17px;
+   }
+
+   
+   
+}
+@media (max-width: 720px) {
+   .buttons___grid{
+      display: flex;
+      gap: 35px;
+      flex-direction: column-reverse;
+      opacity: 1;
+   }
+   
+   .gridButtons{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      align-content: space-between;
+      margin-top: 100px;
+      opacity: 1;
+   }
+
+   .button_about{
+   
+   }
+
+   .button_favorite{
+      
+   }
+   
+   .button_home{
+      margin-left: 10px;
+   }
+}

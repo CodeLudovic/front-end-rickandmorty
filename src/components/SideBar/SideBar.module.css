@@ -1,0 +1,27 @@
+/* Estilo base del menú lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    width: 250px;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.95);
+    transition: left 0.3s ease; /* Agrega una transición suave para mostrar/ocultar el menú */ /* Asegura que el menú esté por encima del contenido */
+    z-index: 3;
+    display: grid;
+    grid-template-rows: 100%;
+  }
+  
+  /* Estilo cuando el menú está abierto */
+  .sidebar_open {
+    display: grid;
+    position: fixed;
+    top: 0;
+    left: 0px; 
+    width: 250px;
+    height: 100%;
+    background-color: rgba(51, 51, 51, 0.95);
+    transition: left 0.3s ease; /* Agrega una transición suave para mostrar/ocultar el menú */ /* Asegura que el menú esté por encima del contenido */
+    z-index: 3;
+    grid-template-rows: 100%;
+  }

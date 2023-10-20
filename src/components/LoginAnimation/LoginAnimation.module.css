@@ -1,0 +1,26 @@
+/* Estilos CSS para la animación de inicio de sesión */
+.login_animation_enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  .login-animation-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .login-animation-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .login-animation-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .hidden {
+    display: none;
+  }

@@ -1,0 +1,79 @@
+.container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../../assets/bgram.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: grid;
+    justify-self: center;
+    grid-template-rows: 100%;
+    justify-items: center;
+    margin-top: 3vh;
+  }
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.buttons a{
+    text-decoration: none;
+}
+
+.ig {
+    width: 45px;
+    height: 45px;
+}
+.in {
+    height: 83px;
+    width: 128px;
+}
+.git {
+    height: 83px;
+    width: 152px;
+}
+
+.myBio{
+    display: grid;
+    width: 65vw;
+    border: 2px solid aliceblue;
+    justify-content: center;
+    background-color: rgba(31, 31, 31, 0.7);
+    justify-items: center;
+    text-align: justify;
+    padding: 35px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    box-shadow: 3px 3px 20px cyan, -3px -3px 20px magenta;
+    border-radius: 10px;
+}
+
+.labels{
+    font-weight: bolder;
+}
+.myBio p{
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Orbitron';
+}
+  
+.imageBio{
+    margin-top: 0px;
+    border-radius: 50%;
+    /* border: 3px solid gray; */
+    padding: 2px;
+    box-shadow: 3px 3px 20px cyan, -3px -3px 20px magenta;
+}

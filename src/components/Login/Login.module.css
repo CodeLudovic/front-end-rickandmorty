@@ -1,0 +1,104 @@
+.container {
+  display: grid;
+  justify-self: center;
+  width: 300px;
+  height: 400px;
+  border-radius: 20px;
+  border: 3px solid aliceblue;
+  background-color: rgba(45, 45, 45, 0.7);
+  margin-top: 23vh;
+  transition: 200ms;
+  font-family: 'Comfortaa';
+  animation: loginAnimation 0.8s ease-out;
+}
+
+@keyframes loginAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container:hover {
+  box-shadow: 3px 3px 20px cyan, -3px -3px 20px magenta;
+}
+
+h2 {
+  color: aliceblue;
+  margin-top: 30px;
+}
+
+input {
+  border: 0;
+  outline: none;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: 'Comfortaa';
+
+}
+input[type="password"]::placeholder {
+  text-align: center;
+}
+input[type="email"]::placeholder {
+  text-align: center;
+}
+input[type="email"], input[type="password"] {
+  text-align: center;
+}
+
+input[type="email"]:focus{
+  text-align: center;
+}
+
+
+.email {
+  font-family: 'Comfortaa';
+  height: 80px;
+}
+
+.password {
+  height: 80px;
+  text-align: center;
+}
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 12px;
+  width: 95%;
+  font-weight: bolder;
+}
+
+.submit {
+  font-size: 12px;
+  border: 0;
+  width: 70px;
+  height: 30px;
+  border-radius: 10px;
+  font-family: 'Comfortaa';
+  background-color: rgb(59, 201, 71);
+  color: aliceblue;
+  transition: 200ms;
+  margin-top: 0px
+}
+
+.submit:hover {
+  scale: 1.2;
+  background-color: rgb(179, 120, 235);
+}
+
+.email {
+  color: rgb(215, 215, 215);
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+.password {
+  color: rgb(215, 215, 215);
+  margin-top: 5px;
+  font-size: 10px;
+}
+

@@ -1,0 +1,91 @@
+.container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: url(../../assets/RickAndMortySpace.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    display: grid;
+    justify-self: center;
+    
+    justify-items: center;
+    margin-top: 3vh;
+  }
+
+  .backDiv {
+    background-color: rgba(31, 31, 31, 0.7);
+    width: 100%;
+    display: grid;
+  }
+  .textoDet p{
+    margin-top: 0px;
+  }
+
+  .divName{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .divImg {
+    width: 300px;
+    height: 300px;
+    display: grid;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .divTextImg2 {
+    font-family: 'Orbitron';
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(166 41 241);
+  }
+
+  .divTextImg {
+    font-family: 'Orbitron';
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+  }
+
+  .textoDet{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: start;
+    align-content: center;
+    font-family: 'Orbitron';
+    /* margin-top: -90px; */
+    border-right: 1px solid aliceblue;
+    overflow: hidden;
+  }
+
+
+  .details{
+    margin-top: 100px;
+    display: grid;
+    width: 50vw;
+    height: 50vh;
+    grid-template-columns: 50% 50%;
+    border: 3px solid aliceblue;
+    justify-content: center;
+
+    justify-items: center;
+    text-align: justify;
+    box-shadow: 3px 3px 20px cyan, -3px -3px 20px magenta;
+    border-radius: 10px;
+}

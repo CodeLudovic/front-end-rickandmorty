@@ -1,0 +1,75 @@
+.container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url(../assets/RickAndMortySpace.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.container {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 40px;
+  margin-top: 60px; 
+  z-index: 1;
+}
+
+.orderBar {
+    display: grid;
+    position: static;
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+    grid-template-columns: 110px 110px 110px;
+    gap: 20px;
+    background-color: rgba(65, 65, 65, 0.3);
+    align-items: center;
+  }
+
+  .orderBar select {
+    height: 30px;
+    align-self: center;
+    background-color: grey;
+    font-family: 'Orbitron';
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: Arcade Gamer;
+  }
+
+  .options {
+    align-self: center;
+    justify-items: center;
+  }
+
+  .reset {
+    width: 60px;
+    height: 30px;
+    align-self: center;
+    border: 0;
+    background-color: #ffff61;
+    color: black;
+    border-radius: 5px;
+    justify-self: center;
+    font-family: Arcade Gamer;
+  }
+  
+  .reset:hover {
+    scale: 0.9;
+    background-color: rgb(108, 231, 104);
+    border: 1px solid black;
+  }
+
+  @media (max-width: 768px) {
+    .orderBar {
+      grid-template-columns: 110px 110px 100px;
+      gap: 20px;
+    }
+  }
+  

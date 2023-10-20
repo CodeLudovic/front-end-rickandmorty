@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { addFav, removeFav } from "../redux/actions/actions";
 import { MAXLENGTH } from "../helpers/data";
-import style from "./Card.Module.css";
+import style from "./Card.module.css";
 import { motion } from "framer-motion";
 
 export function Card({ onClose, item }) {
